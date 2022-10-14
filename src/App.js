@@ -1,33 +1,12 @@
-import React, { useState } from "react";
-import "./App.css";
-
-const Search = ({ value, onChange, children }) => (
-  <div>
-    <label htmlFor="search">{children}</label>
-    <input
-      id="search"
-      type="text"
-      placeholder="search text"
-      value={123}
-      onChange={onChange}
-    />
-  </div>
-);
+import React from "react";
+import SearchApp from "./components/Search/Search";
+import SearchCriteria from "./components/SearchCriteria/SearchCriteria";
 
 const App = () => {
-  const [search, setSearch] = useState("");
-
-  const handleChange = ({ target }) => {
-    setSearch(target.value);
-  };
-
   return (
-    <div>
-      <img src="" alt="sun"></img>
-      <Search value={search} onChange={handleChange}>
-        Search:
-      </Search>
-      <p>Searches for {search ? search : "..."}</p>
+    <div data-testid="app">
+      <SearchApp />
+      <SearchCriteria />
     </div>
   );
 };
