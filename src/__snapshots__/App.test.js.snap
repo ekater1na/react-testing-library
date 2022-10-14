@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders App component 1`] = `
+<DocumentFragment>
+  <div>
+    <img
+      alt="sun"
+      src=""
+    />
+    <div>
+      <label
+        for="search"
+      >
+        Search:
+      </label>
+      <input
+        id="search"
+        placeholder="search text"
+        type="text"
+        value="123"
+      />
+    </div>
+    <p>
+      Searches for ...
+    </p>
+  </div>
+</DocumentFragment>
+`;
