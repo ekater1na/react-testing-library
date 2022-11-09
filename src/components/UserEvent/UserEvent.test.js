@@ -13,7 +13,6 @@ describe("UserEvent", () => {
     //   target: { value: "React" },
     // });
     userEvent.type(screen.getByRole("textbox"), "React");
-    screen.debug();
     expect(screen.getByText(/searches for react/i)).toBeInTheDocument();
   });
 });

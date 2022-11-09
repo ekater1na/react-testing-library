@@ -10,7 +10,6 @@ describe("FireEvent", () => {
     fireEvent.change(screen.getByRole("textbox"), {
       target: { value: "React" },
     });
-    screen.debug();
     expect(screen.getByText(/searches for react/i)).toBeInTheDocument();
   });
 });
