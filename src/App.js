@@ -5,6 +5,7 @@ import SearchApp from "./components/Search/Search";
 import UserEventComponent from "./components/UserEvent/UserEvent";
 import SearchCriteria from "./components/SearchCriteria/SearchCriteria";
 import { RouterComponent } from "./components/Router/Router";
+import TestRedux from './components/redux/TestRedux'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <UserEventComponent />
       <Asynchronous/>
       {/* <RouterComponent /> */}
+      {/* <TestRedux /> */}
     </div>
   );
 };
